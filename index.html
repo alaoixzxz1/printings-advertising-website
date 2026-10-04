@@ -3,815 +3,310 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>مطبوعات | دعاية وإعلان مبتكرة</title>
+    <title>مطبوعات برو | UI/UX متحرك</title>
     <meta
       name="description"
-      content="موقع احترافي لخدمات الطباعة والدعاية والإعلان، تصميمات فاخرة، حلول تسويقية متكاملة للمؤسسات والأعمال التجارية."
+      content="موقع احترافي للطباعة والدعاية والإعلان، بتصميم عصري، UI/UX متحرك، وتأثيرات زجاجية احترافية."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="page-shell">
-      <header class="topbar">
-        <div class="container nav-wrap">
-          <a href="#home" class="brand" aria-label="الصفحة الرئيسية">
-            <span class="brand__mark">M</span>
-            <span class="brand__text">مطبوعات</span>
-          </a>
+    <div class="animated-bg" aria-hidden="true">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+      <div class="grid-pattern"></div>
+      <canvas id="particles"></canvas>
+    </div>
 
-          <button class="nav-toggle" aria-label="فتح القائمة" aria-expanded="false">
-            <span></span>
-            <span></span>
-            <span></span>
-          </button>
+    <header class="topbar">
+      <div class="container nav-wrap">
+        <a href="#home" class="brand" aria-label="الصفحة الرئيسية">
+          <span class="brand-mark">M</span>
+          <span class="brand-name">مطبوعات برو</span>
+        </a>
 
-          <nav class="nav" aria-label="التنقل الرئيسي">
-            <a href="#services">خدماتنا</a>
-            <a href="#portfolio">أعمالنا</a>
-            <a href="#process">العمليات</a>
-            <a href="#about">من نحن</a>
-            <a href="#contact">تواصل</a>
-          </nav>
+        <button class="menu-toggle" aria-label="فتح القائمة" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
 
-          <a class="btn btn-primary nav-cta" href="#contact">اطلب الآن</a>
-        </div>
-      </header>
+        <nav class="nav" aria-label="التنقل الرئيسي">
+          <a href="#home">الرئيسية</a>
+          <a href="#services">الخدمات</a>
+          <a href="#portfolio">أعمالنا</a>
+          <a href="#about">من نحن</a>
+          <a href="#contact">تواصل</a>
+        </nav>
 
-      <main id="home">
-        <section class="hero section">
-          <div class="container hero-grid">
-            <div class="hero__content reveal">
-              <span class="eyebrow">إبداع بصري + تسويق ذكي</span>
-              <h1>نصنع هويات قوية <span>لأعمالك</span> وتُشعلك إلى السوق.</h1>
-              <p>
-                نقدم حلول الطباعة، الدعاية، والهوية البصرية بخبرة واسعة، لتجعل علامتك
-                أكثر وضوحًا وثقة في كل نقطة تلامسها.
-              </p>
+        <a href="#contact" class="btn btn-primary">اطلب الآن</a>
+      </div>
+    </header>
 
-              <div class="hero__actions">
-                <a class="btn btn-primary" href="#contact">ابدأ مشروعك</a>
-                <a class="btn btn-secondary" href="#portfolio">استعرض أعمالنا</a>
-              </div>
+    <main id="home">
+      <section class="hero section">
+        <div class="container hero-grid">
+          <div class="hero-copy reveal">
+            <span class="eyebrow">تصميم فني + تسويق ذكي</span>
+            <h1>
+              نبدع في<br />
+              <span class="gradient-text">الهوية البصرية</span><br />
+              والطباعة والإعلان
+            </h1>
+            <p>
+              نساعد الشركات والعلامات على الظهور بقوة، من خلال تصميمات أنيقة، طباعة
+              احترافية، وحملات إعلانية تليق برؤيتك وتؤثر في جمهورك.
+            </p>
 
-              <div class="metrics">
-                <div>
-                  <strong data-count="1200">0</strong>
-                  <span>مشروع مُنجز</span>
-                </div>
-                <div>
-                  <strong data-count="98">0</strong>
-                  <span>رضا العملاء</span>
-                </div>
-                <div>
-                  <strong data-count="15">0</strong>
-                  <span>سنوات خبرة</span>
-                </div>
-              </div>
+            <div class="hero-actions">
+              <a href="#contact" class="btn btn-primary">ابدأ مشروعك</a>
+              <a href="#portfolio" class="btn btn-secondary">استعراض الأعمال</a>
             </div>
 
-            <div class="hero__visual reveal">
-              <div class="visual-card visual-card--main">
-                <div class="mockup-badge">أفضل متجر للإعلانات</div>
-                <div class="print-preview">
-                  <div class="preview-panel preview-panel--dark">
-                    <span class="mini-tag">Brand Launch</span>
-                    <h3>Creative<br />Campaign</h3>
-                  </div>
-                  <div class="preview-panel preview-panel--light">
-                    <div class="circle-ring"></div>
-                    <ul>
-                      <li>تصاميم احترافية</li>
-                      <li>مطبوعات فاخرة</li>
-                      <li>تسويق ذكي</li>
-                    </ul>
-                  </div>
-                </div>
+            <div class="hero-stats">
+              <div>
+                <strong data-count="1200">0</strong>
+                <span>مشروع منجز</span>
               </div>
-
-              <div class="floating-card card--one">
-                <span>+38%</span>
-                <small>زيادة التفاعل</small>
+              <div>
+                <strong data-count="98">0</strong>
+                <span>رضا العملاء</span>
               </div>
-
-              <div class="floating-card card--two">
-                <span>24/7</span>
-                <small>دعم متواصل</small>
+              <div>
+                <strong data-count="15">0</strong>
+                <span>سنوات خبرة</span>
               </div>
             </div>
           </div>
-        </section>
 
-        <section class="trusted section-sm">
-          <div class="container">
-            <p>نرتبط مع العلامات التجارية الرائدة</p>
-            <div class="logo-row" aria-label="شركاء أعمالنا">
-              <span>ميديا فاست</span>
-              <span>نُقطة</span>
-              <span>أفكار</span>
-              <span>برستيج</span>
-              <span>قمة</span>
-            </div>
-          </div>
-        </section>
-
-        <section class="services section" id="services">
-          <div class="container">
-            <div class="section-heading reveal">
-              <span class="eyebrow">خدماتنا</span>
-              <h2>حلول متكاملة للطباعة والإعلان</h2>
-            </div>
-
-            <div class="services-grid">
-              <article class="service-card reveal">
-                <div class="icon-wrap">🎨</div>
-                <h3>التصميم الإعلاني</h3>
-                <p>تصاميم مبتكرة تعكس هوية علامتك وتجذب جمهورك المستهدف.</p>
-              </article>
-
-              <article class="service-card reveal">
-                <div class="icon-wrap">🖨️</div>
-                <h3>الطباعة المتخصصة</h3>
-                <p>من بطاقات، منشورات، لافتات، إلى أكشاك وطباعة عالية الجودة.</p>
-              </article>
-
-              <article class="service-card reveal">
-                <div class="icon-wrap">📢</div>
-                <h3>الحملات التسويقية</h3>
-                <p>استراتيجيات إعلانية مدروسة ترفع الوعي وتزيد المبيعات بثقة.</p>
-              </article>
-
-              <article class="service-card reveal">
-                <div class="icon-wrap">📦</div>
-                <h3>هوية العلامة</h3>
-                <p>بناء هوية متكاملة مع شعارات، ألوان، وقيم تجعل علامتك مميزة.</p>
-              </article>
-            </div>
-          </div>
-        </section>
-
-        <section class="showcase section" id="portfolio">
-          <div class="container">
-            <div class="section-heading reveal">
-              <span class="eyebrow">أعمالنا</span>
-              <h2>مشاريع أنجزناها بلمسة إبداعية</h2>
-            </div>
-
-            <div class="showcase-grid">
-              <article class="work-card work-card--tall reveal">
-                <div class="work-card__content">
-                  <span>حملة متجر</span>
-                  <h3>إطلاق علامة جديدة</h3>
+          <div class="hero-visual reveal">
+            <div class="visual-panel glass">
+              <div class="floating-badge">Premium Creative</div>
+              <div class="visual-box">
+                <div class="mini-card dark">
+                  <span>Brand Launch</span>
+                  <h3>Creative<br />Campaign</h3>
                 </div>
-              </article>
-
-              <article class="work-card work-card--wide reveal">
-                <div class="work-card__content">
-                  <span>مطبوعات</span>
-                  <h3>بطاقات عمل فاخرة</h3>
-                </div>
-              </article>
-
-              <article class="work-card work-card--accent reveal">
-                <div class="work-card__content">
-                  <span>إعلان</span>
-                  <h3>تشريفات فعالية كبرى</h3>
-                </div>
-              </article>
-            </div>
-          </div>
-        </section>
-
-        <section class="process section" id="process">
-          <div class="container">
-            <div class="section-heading reveal">
-              <span class="eyebrow">طريق العمل</span>
-              <h2>كيف ننجز مشروعك بشكل احترافي</h2>
-            </div>
-
-            <div class="process-grid">
-              <div class="step reveal">
-                <span>01</span>
-                <h3>الفكرة</h3>
-                <p>نسمع هدفك، رؤية مشروعك، ومتطلبات الجمهور المستهدف.</p>
-              </div>
-
-              <div class="step reveal">
-                <span>02</span>
-                <h3>التصميم</h3>
-                <p>نضع الرسالة البصرية المناسبة مع هوية متناسقة وجذابة.</p>
-              </div>
-
-              <div class="step reveal">
-                <span>03</span>
-                <h3>الإنتاج</h3>
-                <p>ننتج طباعتك بصياغة دقيقة وجودة عالية ومواصفات متقدمة.</p>
-              </div>
-
-              <div class="step reveal">
-                <span>04</span>
-                <h3>التسليم</h3>
-                <p>نُسلمك النتيجة بشكل جاهز للعرض، مع متابعة ودعم مستمر.</p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section class="about section" id="about">
-          <div class="container about-grid">
-            <div class="about__image reveal">
-              <div class="glass-panel">
-                <div class="panel-text">
-                  <span>من نحن</span>
-                  <h3>فريق يربط بين الفن والتسويق.</h3>
+                <div class="mini-card light">
+                  <div class="ring"></div>
+                  <ul>
+                    <li>تصاميم احترافية</li>
+                    <li>طباعة فاخرة</li>
+                    <li>حملات ذكية</li>
+                  </ul>
                 </div>
               </div>
             </div>
 
-            <div class="about__content reveal">
-              <span class="eyebrow">لماذا نحن؟</span>
-              <h2>نطوّر هويتك بثقة ونجاح ملموس.</h2>
-              <p>
-                نعمل على تقديم حلول إبداعية تربط بين التصميم، المطبوعات، وحملات
-                التسويق لتضع علامتك في مركز الرؤية وتحفّز التفاعل والتحويل.
-              </p>
-
-              <ul class="check-list">
-                <li>خبرة تنفيذية في الطباعة والإعلان</li>
-                <li>تصميم مبتكر يعكس قيم علامتك</li>
-                <li>دعم فني وتسليم سريع وموثوق</li>
-                <li>حلول مخصصة للعلامات التجارية المحلية والعالمية</li>
-              </ul>
-            </div>
+            <div class="float-card card-top">+38% تفاعل</div>
+            <div class="float-card card-bottom">24/7 دعم</div>
           </div>
-        </section>
-
-        <section class="testimonials section">
-          <div class="container">
-            <div class="section-heading reveal">
-              <span class="eyebrow">آراء العملاء</span>
-              <h2>ما يقوله عملاؤنا عن تجربتهم</h2>
-            </div>
-
-            <div class="testimonial-grid">
-              <article class="testimonial reveal">
-                <p>
-                  “فريق رائع، كرسوا وقتًا كبيرًا في فهم علامتنا، ونتج عن ذلك تصميم
-                  متكامل جعل منتجنا أكثر حضورًا في السوق.”
-                </p>
-                <div class="person">
-                  <strong>سارة الزهراني</strong>
-                  <span>مديرة تسويق</span>
-                </div>
-              </article>
-
-              <article class="testimonial reveal">
-                <p>
-                  “خدمة الطباعة كانت دقيقة جدًا والنتيجة فاقت توقعاتنا، خاصة في
-                  تفاصيل المواد والهوية البصرية.”
-                </p>
-                <div class="person">
-                  <strong>أحمد ال��اصر</strong>
-                  <span>مالك متجر</span>
-                </div>
-              </article>
-
-              <article class="testimonial reveal">
-                <p>
-                  “العملية كانت سلسة من البداية إلى النهاية، والنتيجة احترافية جدًا
-                  ساعدتنا في إنعاش حضور علامتنا.”
-                </p>
-                <div class="person">
-                  <strong>لينا الرفاعي</strong>
-                  <span>مديرة علامة تجارية</span>
-                </div>
-              </article>
-            </div>
-          </div>
-        </section>
-      </main>
-
-      <section class="cta-banner section" id="contact">
-        <div class="container cta-banner__inner reveal">
-          <div>
-            <span class="eyebrow">ابدأ الآن</span>
-            <h2>دعنا نُبدع لك هوية تُحدث فرقًا.</h2>
-          </div>
-          <a href="mailto:hello@matbouaat.com" class="btn btn-primary">hello@matbouaat.com</a>
         </div>
       </section>
 
-      <footer class="footer">
-        <div class="container footer__inner">
-          <div>
-            <a href="#home" class="brand">
-              <span class="brand__mark">M</span>
-              <span class="brand__text">مطبوعات</span>
-            </a>
-          </div>
-          <p>© 2026 مطبوعات. جميع الحقوق محفوظة.</p>
-          <div class="socials">
-            <a href="#" aria-label="إنستغرام">◎</a>
-            <a href="#" aria-label="تويتر">◌</a>
-            <a href="#" aria-label="لينكدإن">◍</a>
+      <section class="trusted section-sm">
+        <div class="container">
+          <p>نشتغل مع أبرز العلامات التجارية</p>
+          <div class="brand-strip">
+            <span>ميديا فاست</span>
+            <span>أفكار</span>
+            <span>قمة</span>
+            <span>برستيج</span>
+            <span>نقطة</span>
           </div>
         </div>
-      </footer>
-    </div>
+      </section>
+
+      <section class="services section" id="services">
+        <div class="container">
+          <div class="section-head reveal">
+            <span class="eyebrow">خدماتنا</span>
+            <h2>حلول متكاملة للطباعة والدعاية</h2>
+          </div>
+
+          <div class="services-grid">
+            <article class="service-card reveal">
+              <div class="icon">🎨</div>
+              <h3>التصميم الإعلاني</h3>
+              <p>تصاميم مبتكرة تعكس رسالة علامتك وتُشعرك في السوق.</p>
+            </article>
+
+            <article class="service-card reveal">
+              <div class="icon">🖨️</div>
+              <h3>الطباعة المتخصصة</h3>
+              <p>بطاقات، لافتات، كتيبات، منشورات، وأعمال طباعة بجودة فاخرة.</p>
+            </article>
+
+            <article class="service-card reveal">
+              <div class="icon">📢</div>
+              <h3>الحملات التسويقية</h3>
+              <p>استراتيجية إعلانية مدروسة ترفع الوعي وتضاعف المبيعات.</p>
+            </article>
+
+            <article class="service-card reveal">
+              <div class="icon">📦</div>
+              <h3>هوية العلامة</h3>
+              <p>بناء هوية متكاملة تجمع بين القيم، الألوان، والرسالة.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="portfolio section" id="portfolio">
+        <div class="container">
+          <div class="section-head reveal">
+            <span class="eyebrow">أعمالنا</span>
+            <h2>مشاريع حققت رؤية واضحة للعلامات</h2>
+          </div>
+
+          <div class="portfolio-grid">
+            <article class="project project-tall reveal">
+              <div class="project-overlay">
+                <span>حملة متجر</span>
+                <h3>إطلاق علامة جديدة</h3>
+              </div>
+            </article>
+
+            <article class="project project-wide reveal">
+              <div class="project-overlay">
+                <span>مطبوعات</span>
+                <h3>بطاقات عمل فاخرة</h3>
+              </div>
+            </article>
+
+            <article class="project project-accent reveal">
+              <div class="project-overlay">
+                <span>إعلان</span>
+                <h3>فعالية كبرى</h3>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="process section">
+        <div class="container">
+          <div class="section-head reveal">
+            <span class="eyebrow">طريق العمل</span>
+            <h2>كيف ننجز مشروعك في 4 خطوات</h2>
+          </div>
+
+          <div class="process-grid">
+            <div class="step reveal">
+              <span>01</span>
+              <h3>الفكرة</h3>
+              <p>نستمع إلى هدفك، رسالتك، وجمهورك قبل أي تصميم.</p>
+            </div>
+            <div class="step reveal">
+              <span>02</span>
+              <h3>التصميم</h3>
+              <p>نرسم الهوية البصرية وفق أسلوب احترافي وملائم للسوق.</p>
+            </div>
+            <div class="step reveal">
+              <span>03</span>
+              <h3>الإنتاج</h3>
+              <p>نستخرج الطباعة والمواد بجودة عالية ودقة متقدمة.</p>
+            </div>
+            <div class="step reveal">
+              <span>04</span>
+              <h3>التسليم</h3>
+              <p>نوفر لك المنتج النهائي جاهزاً للتسويق والعرض.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="about section" id="about">
+        <div class="container about-grid">
+          <div class="about-visual reveal">
+            <div class="glass-box">
+              <div class="inner-glow"></div>
+              <p>نعمل بلمسة فنية وهدف واضح.</p>
+            </div>
+          </div>
+
+          <div class="about-copy reveal">
+            <span class="eyebrow">من نحن</span>
+            <h2>فريق يجمع الفن والتسويق والجوهر الحقيقي للعلامة.</h2>
+            <p>
+              في مطبوعات برو نؤمن أن الفن يفتح الأبواب، لكن الرسالة الصحيحة هي ما يجعل
+              العميل يلتزم. لذلك نعمل على تصميمات توصل فكرة علامتك بوضوح وتُسهم في نمو
+              حضورك في السوق.
+            </p>
+            <ul>
+              <li>خبرة تنفيذية في التصميم والطباعة</li>
+              <li>تصاميم مخصصة للهوية البصرية</li>
+              <li>دعم وتسليم سريع واحترافي</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="testimonials section">
+        <div class="container">
+          <div class="section-head reveal">
+            <span class="eyebrow">آراء العملاء</span>
+            <h2>ما يقوله عملاؤنا عن تجربتهم</h2>
+          </div>
+
+          <div class="testimonial-grid">
+            <article class="testimonial reveal">
+              <p>“النتيجة فاقت التوقعات، كل التفاصيل كانت احترافية جدًا وركزت على هويتنا بشكل ممتاز.”</p>
+              <div class="person">
+                <strong>سارة الزهراني</strong>
+                <span>مديرة تسويق</span>
+              </div>
+            </article>
+
+            <article class="testimonial reveal">
+              <p>“من أول جلسة إلى التسليم، كان الفريق متعاونًا جدًا، والهوية البصرية أصبحت أقوى بكثير.”</p>
+              <div class="person">
+                <strong>أحمد الصاعدي</strong>
+                <span>مالك علامة تجارية</span>
+              </div>
+            </article>
+
+            <article class="testimonial reveal">
+              <p>“تجربة ممتازة، طباعة عالية الجودة، وتصميم فعلي يعكس رؤية الشركة بطريقة احترافية جدًا.”</p>
+              <div class="person">
+                <strong>لينا الرفاعي</strong>
+                <span>مديرة علامة</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <section class="cta section" id="contact">
+      <div class="container cta-box reveal">
+        <div>
+          <span class="eyebrow">ابدأ الآن</span>
+          <h2>دعنا نصنع لك هوية تجذب وتبيع.</h2>
+        </div>
+        <a href="mailto:hello@matbouaat.com" class="btn btn-primary">hello@matbouaat.com</a>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div class="brand footer-brand">
+          <span class="brand-mark">M</span>
+          <span class="brand-name">مطبوعات برو</span>
+        </div>
+        <p>© 2026 مطبوعات برو. جميع الحقوق محفوظة.</p>
+        <div class="socials">
+          <a href="#" aria-label="إنستغرام">◎</a>
+          <a href="#" aria-label="تويتر">◌</a>
+          <a href="#" aria-label="لينكد إن">◍</a>
+        </div>
+      </div>
+    </footer>
 
     <script src="script.js"></script>
   </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
